@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+
+        }
+
+        .view_page {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+
+        }
+
+        .Tap_to_view {
+            width: 600px;
+            border-radius: 20px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .Tap_to_view img {
+            width: 100%;
+            height: 85vh;
+            border-radius: 15px;
+            margin-bottom: 50px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 7px;
+            background-color: rgb(105, 157, 105);
+            color: white;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            position: relative;
+            bottom: 37px;
+
+        }
+
+        button:hover {
+            background-color: rgb(79, 182, 79);
+        }
+
+        #icons {
+            position: absolute;
+            left: 24px;
+            top: 10px;
+            font-size: 31px;
+            color: #0200c5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="view_page">
+        <i id="icons" class="fa fa-arrow-left" aria-hidden="true"></i>
+
+        <div class="Tap_to_view">
+
+            <img src="Front page_page-0001.jpg" alt="Front Page">
+            <button>Click here to select</button>
+        </div>
+    </div>
+</body>
+
+</html>

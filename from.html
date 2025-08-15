@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #e0e0e0;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            background: #fff;
+            padding: 38px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(48, 47, 47, 0.1);
+            width: 323px;
+            height: 619px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .input-group input {
+            width: 100%;
+            border: 1.5px solid #000;
+            border-radius: 8px;
+            padding: 14px 10px 6px 10px;
+            font-size: 16px;
+            outline: none;
+            background: none;
+        }
+
+        .input-group label {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #fff;
+            padding: 0 5px;
+            color: navy;
+            transition: 0.3s;
+            pointer-events: none;
+        }
+
+        .input-group input:focus+label,
+        .input-group input:not(:placeholder-shown)+label {
+            top: 0;
+            transform: translateY(-50%) scale(0.9);
+            color: navy;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+         background-color: rgb(105, 157, 105);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+    button:hover {
+            background-color: rgb(79, 182, 79);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Fill your details</h2>
+        <form>
+            <div class="input-group">
+                <input type="text" id="fullname" placeholder=" " required />
+                <label for="fullname">Full Name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="class" placeholder=" " required />
+                <label for="class">Semester</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="section" placeholder=" " required />
+                <label for="section">Section</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="Registration" placeholder=" " required />
+                <label for="Registration">Enrollment Number</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="pro" placeholder=" " required />
+                <label for="pro">Program</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="course" placeholder=" " required />
+                <label for="course">Course</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="name" placeholder=" " required />
+                <label for="name">Project Name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="submit" placeholder=" " required />
+                <label for="submit">Submited To</label>
+            </div>
+            <!-- <div class="input-group">
+            <input type="text" id="confirm" placeholder=" " required />
+            <label for="confirm">Confirm</label>
+        </div> -->
+            <button type="submit">Sumit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
